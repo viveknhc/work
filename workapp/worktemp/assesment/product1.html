@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+</head>
+<body>
+
+    <label for="">Product</label>
+    <input type="text" id="txt1">
+    <label for="">Quantity </label>
+    <input type="text" id="txt2">
+    <label for="">Price</label>
+    <input type="text" id="txt3">
+    <button id="add">Add</button>
+  
+
+    <table border="1px" class="p-5">
+        <tr>
+          
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>price</th>
+          <th>Total </th>
+        </tr>
+</table>
+<label for="">Grand total</label>
+<input type="text" id="grand">
+
+<script>
+  grand=0
+  $('#add').click(function(){
+      a=$("#txt1").val()
+      b=$("#txt2").val()
+      c=$("#txt3").val()
+      total=b*c
+      grand=grand+total
+      $('table').append('<tr><td>'+a+'</td><td>'+b+'</td><td>'+c+'</td></tr>')
+      
+      $('#grand').val(grand)
+  })
+</script>
+</body>
+</html>

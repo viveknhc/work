@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <label for="">proof</label>
+    <select name="" id="">
+        <option value="" >choose your id</option>
+        <option value="adhar">Adhar Number</option>
+        <option value="pasport">Passport</option>
+    </select>
+    <div>
+        <label for="" id="lab1"></label>
+        <input type="text" style="display: none;" id="txt">
+    </div>
+    <script>
+        $('select').change(function(){
+            b=$('select').val()
+            $('#lab1').text("enter "+b+" number")
+            // $('#lab1').show()
+            $('input').show()
+            if(b==""){
+                $('#lab1').hide()
+                $('#txt').hide()
+
+            }
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+   <input type="checkbox" id="input1">if you have passport
+   <br>
+   
+   <label for="" id="input2" style="display: none;">enter your passport number</label>
+   <input type="text" id="input2" style="display: none;">
+
+    <script>
+           $('#input1').click(function(){
+               $('#input2').toggle()
+           })
+
+        // $('h1').click(function(){
+        //     $('p').hide()
+        // })
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pele</title>
+</head>
+<style>
+    .img {
+        box-shadow: 20px;
+    }
+
+    .head {
+        text-align: center;
+        text-shadow: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .main {
+        border: 0.5px solid;
+        border-color: black;
+        border-radius: 20px;
+        margin: 50px;
+    }
+
+    .small {
+        text-align: center;
+    }
+
+    .grid-container {
+        display: grid;
+        column-gap: 50px;
+        grid-template-areas:
+            'a b b b b b';
+        padding: 30px
+    }
+
+    .grid-item {
+        grid-area: ;
+    }
+
+    .grid1 {
+        grid-area: a;
+        border-radius: 10px;
+
+
+    }
+
+    .grid2 {
+        grid-area: b;
+        background-image: linear-gradient(rgb(196, 216, 171), rgb(134, 177, 134));
+        border-radius: 20px;
+        /* text-shadow: 2px 2px; */
+        box-shadow: 2px 2px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+
+    .link {
+        text-decoration: none;
+    }
+
+    dd {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    dt {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+</style>
+
+<body style="background-image: linear-gradient(white,black);">
+    <div class="main" style="background-color: white;">
+        <div>
+            <h1 class="head"
+                style=" height: 50px;margin: 20px 20px 0px 20px;color: rgb(255, 255, 255);text-shadow: 3px 3px rgb(176, 177, 169);">
+                Diego Maradona</h1>
+            <h4 style="box-shadow: 20px;">
+                <center> Football Player</center>
+            </h4>
+            <hr>
+
+        </div>
+        <div>
+
+            <div class="grid-container">
+                <div class="grid1"><img src="{% static 'images/mardona.jpg' %}" alt=""></div>
+                <div class="grid2">
+                    <ul>
+                        <li><b>Full Name:</b> Diego Armando Maradona</li><br><br>
+                        <li><b>Place of Birth:</b> Lanús, Argentina</li><br><br>
+                        <li><b>Date of Birth:</b>30 October 1960</li><br><br>
+                        <li><b>Death of date:</b>25 November 2020 (aged 60)</li><br><br>
+                        <li><a class="link" href="https://en.wikipedia.org/wiki/Diego_Maradona">Click Here for wiki</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div style="padding: 30px;color: rgb(224, 221, 221);background-image: linear-gradient(#000428,#004e92);">
+                <dt><b>Achievments</b>
+                <dd>Diego Armando Maradona (Spanish: [ˈdjeɣo maɾaˈðona]; 30 October 1960 – 25 November 2020) was an
+                    Argentine professional football player and manager. Widely regarded as one of the greatest players
+                    in the history of the sport, he was one of the two joint winners of the FIFA Player of the 20th
+                    Century award.[3][4] Maradona's vision, passing, ball control, and dribbling skills were combined
+                    with his small stature, which gave him a low centre of gravity allowing him to manoeuvre better than
+                    most other players. His presence and leadership on the field had a great effect on his team's
+                    general performance, while he would often be singled out by the opposition. In addition to his
+                    creative abilities, he possessed an eye for goal and was known to be a free kick specialist. A
+                    precocious talent, Maradona was given the nickname "El Pibe de Oro" ("The Golden Boy"), a name that
+                    stuck with him throughout his career.[5] He also had a troubled off-field life and was banned in
+                    both 1991 and 1994 for abusing drugs.[6]</dd>
+                </dt>
+                <dt>abc
+                <dd>Diego Armando Maradona (Spanish: [ˈdjeɣo maɾaˈðona]; 30 October 1960 – 25 November 2020) was an
+                    Argentine professional football player and manager. Widely regarded as one of the greatest players
+                    in the history of the sport, he was one of the two joint winners of the FIFA Player of the 20th
+                    Century award.[3][4] Maradona's vision, passing, ball control, and dribbling skills were combined
+                    with his small stature, which gave him a low centre of gravity allowing him to manoeuvre better than
+                    most other players. His presence and leadership on the field had a great effect on his team's
+                    general performance, while he would often be singled out by the opposition. In addition to his
+                    creative abilities, he possessed an eye for goal and was known to be a free kick specialist. A
+                    precocious talent, Maradona was given the nickname "El Pibe de Oro" ("The Golden Boy"), a name that
+                    stuck with him throughout his career.[5] He also had a troubled off-field life and was banned in
+                    both 1991 and 1994 for abusing drugs.[6]</dd>
+                </dt>
+                <dt>abc
+                <dd>Diego Armando Maradona (Spanish: [ˈdjeɣo maɾaˈðona]; 30 October 1960 – 25 November 2020) was an
+                    Argentine professional football player and manager. Widely regarded as one of the greatest players
+                    in the history of the sport, he was one of the two joint winners of the FIFA Player of the 20th
+                    Century award.[3][4] Maradona's vision, passing, ball control, and dribbling skills were combined
+                    with his small stature, which gave him a low centre of gravity allowing him to manoeuvre better than
+                    most other players. His presence and leadership on the field had a great effect on his team's
+                    general performance, while he would often be singled out by the opposition. In addition to his
+                    creative abilities, he possessed an eye for goal and was known to be a free kick specialist. A
+                    precocious talent, Maradona was given the nickname "El Pibe de Oro" ("The Golden Boy"), a name that
+                    stuck with him throughout his career.[5] He also had a troubled off-field life and was banned in
+                    both 1991 and 1994 for abusing drugs.[6]</dd>
+                </dt>
+                <dt>abc
+                <dd>Diego Armando Maradona (Spanish: [ˈdjeɣo maɾaˈðona]; 30 October 1960 – 25 November 2020) was an
+                    Argentine professional football player and manager. Widely regarded as one of the greatest players
+                    in the history of the sport, he was one of the two joint winners of the FIFA Player of the 20th
+                    Century award.[3][4] Maradona's vision, passing, ball control, and dribbling skills were combined
+                    with his small stature, which gave him a low centre of gravity allowing him to manoeuvre better than
+                    most other players. His presence and leadership on the field had a great effect on his team's
+                    general performance, while he would often be singled out by the opposition. In addition to his
+                    creative abilities, he possessed an eye for goal and was known to be a free kick specialist. A
+                    precocious talent, Maradona was given the nickname "El Pibe de Oro" ("The Golden Boy"), a name that
+                    stuck with him throughout his career.[5] He also had a troubled off-field life and was banned in
+                    both 1991 and 1994 for abusing drugs.[6]</dd>
+                </dt>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

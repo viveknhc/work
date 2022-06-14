@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+ 
+    <input type="text" placeholder="fist name" id="fname">
+    <input type="text"placeholder="last name" id="lname">
+    <input type="text"placeholder="mobile" id="mobile">
+    <input type="email"placeholder="email" id="email">
+    <input type="password"placeholder="password" id="password">
+    <button type="button" id="reg">Register</button>
+
+    <script>
+        $(document).ready(()=>{
+            $("#reg").click(()=>{
+                $.ajax({
+                    url:"adduser",
+                    type:"post",
+                    data:
+                    {
+                    'fname':$("#fname").val(),
+                    'lname':$("#lname").val(),
+                    'mobile':$("#mobile").val(),
+                    'email':$("#email").val(),
+                    'password':$("#password").val()
+                },
+                success:function(response){
+                    alert("data inserted")
+
+                }
+                })
+
+            })
+        })
+
+    </script>
+</body>
+</html>

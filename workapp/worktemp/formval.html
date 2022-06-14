@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <h2>sign up</h2>
+        name:
+        <input type="text" placeholder="name" id="name"> <br>
+        <p id="txt1"></p>
+        password: <input type="password" placeholder="password" id="password" > 
+        <br>
+        <p id="txt2"></p>
+
+      
+            <input type="radio" id="ma" name="one" value="MALE">
+            <label>MALE</label><br>
+            <input type="radio" id="fe" name="one" value="FEMALE">
+            <label >FEMALE</label><br>
+            <br>
+            <button id="save" onclick="return save1()">save</button>
+            
+        
+
+    </form>
+    <script>
+        function save1(){
+            if(document.getElementById("name").value=="")
+            {
+                
+                document.getElementById("txt1").innerHTML="*this field is mandotary";
+                document.getElementById("txt1").style.color="red"
+                document.getElementById("txt1").style.backgroundColor="yellow    zaaswzqerf/-p[;'++-"
+
+                return false
+            }
+            else if(document.getElementById("password").value==""){
+                document.getElementById("password").style.borderColor="red";
+                // document.getElementById("password").focus()
+                
+                return false
+
+            }
+            else if(document.getElementById("ma").checked=="" && document.getElementById("fe").checked==""){
+                alert("pls select");
+                document.getElementById("ma").style.textUnderlinePosition="red"
+                document.getElementById("fa").style.textUnderlinePosition="red"
+                  return false
+            }
+
+        }
+    </script>
+
+</body>
+</html>

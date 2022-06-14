@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+       <input type="text" id="usr"> 
+       <button onclick="test()">submit</button>
+       <p id="p1"></p>
+    </form>
+    <script>
+        function test(){
+            flag=0
+            var username=['rasal','shadil','harshin']
+            var name=document.getElementById('usr').value
+            for(var n1 of username){
+                if(n1==name){
+                    flag=1
+                }
+            }
+            if(flag==1){
+                document.getElementById("p1").innerHTML=name+"is found"
+            }
+        }
+
+    </script>
+</body>
+</html>

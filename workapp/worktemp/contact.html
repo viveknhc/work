@@ -1,0 +1,40 @@
+{% extends 'master.html'%}
+{% block content %}
+{% load static %}
+<div style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;padding: 20px 30px;">
+    <center><h2>contact us</h2></center>
+</div>
+
+<div class="row pt-10" style="padding: 30px;">
+    <div class="col-lg-6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.6287303855665!2d78.33867361479697!3d17.4295961880533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9382e6297593%3A0x452c5be4371247de!2sMicrosoft%20Campus%20Building%203%2C%20Gachibowli%2C%20Hyderabad%2C%20Telangana%20500032!5e0!3m2!1sen!2sin!4v1639550264860!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="col-6 pt-5">
+        <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1"></label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1"></label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1"></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="text"></textarea>
+            </div>
+          </form>
+
+
+
+
+
+
+
+
+
+        <button type="button" class="btn btn-info">Submit</button>
+    </div>
+
+</div>
+{% endblock %}

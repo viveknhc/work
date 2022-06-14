@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  function sum() {
+            var txtFirstNo = document.getElementById('txtFirstNo').value;
+            var txtSecondNo =document.getElementById('abc').value;
+            var result = parseInt(txtFirstNo) + parseInt(txtSecondNo);
+                document.getElementById('res').innerHTML = result;
+            
+        }
+
+
+    </script>
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<div style="border:1px solid gray;width: 450px; height:300px">
+    <h2>Add two textbox values without pressing anybuttons</h2>
+    <input type="text" id="txtFirstNo" placeholder="pleaseenterFirst Number" onkeyup="sum()" />
+    <!-- <input type="text" id="txtSecondNo" placeholder="pleaseenterSecond Number" onkeyup="sum()" /> -->
+
+    <select name="" id="abc" onchange="sum()">
+        <option value="10">10</option>
+        <option value="20">20</option>
+    </select>
+    <br />
+    <div style="padding-top:10px">
+        Result:
+        <div id="res"></div>
+    </div></div>
+</body>
+</html>
+
+

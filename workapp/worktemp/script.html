@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- <input type="text" id="n1">
+<button onclick="oe()">check</button>
+<label for="" id="res"></label> 
+<br><br><br><br><br>
+
+
+<input type="number" id="m1">
+<button onclick="mul()">enter</button>
+<div id="mul"></div> -->
+<form action="">
+    <div style="background-color: rgb(111, 112, 109); width: 300px;padding: 30px;" >
+enter first Number:
+<input type="number" id="n1"><br><br><br><br><br>
+enter second Number:
+<input type="number" id="n2"><br><br><br><br><br>
+<button onclick="sum()">Add</button>
+<button onclick="sub()">Sub</button>
+<button onclick="mul()">multiple</button>
+<button onclick="div()">Division</button><br><br><br><br><br>
+<input type="text" id="res">
+</div></form>
+    <script>
+
+
+// function oe(){
+//     num=Number(document.getElementById("n1").value)
+//     if(num%2==0){
+//         document.getElementById("res").innerHTML="even"
+//     }
+//     else
+//     {
+//         document.getElementById("res").innerHTML="odd"
+//     }
+
+
+//  }
+
+// function mul(){
+    
+//     num=Number(document.getElementById("m1").value)
+//     document.getElementById("mul").innerHTML=" "
+//     for( var i=1;i<=10;i++){
+//         document.getElementById("mul").innerHTML += num+"*"+i+"="+num*i+"<br>"
+      
+//     }
+
+
+// }
+
+
+function sum(){
+    n1=Number(document.getElementById("n1").value)
+    n2=Number(document.getElementById("n2").value)
+    sum=n1+n2
+    document.getElementById("res").value=sum
+}
+       
+function sub(){
+    n1=Number(document.getElementById("n1").value)
+    n2=Number(document.getElementById("n2").value)
+    sum=n1-n2
+    document.getElementById("res").value=sum
+}
+
+function mul(){
+    n1=Number(document.getElementById("n1").value)
+    n2=Number(document.getElementById("n2").value)
+    sum=n1*n2
+    document.getElementById("res").value=sum
+}
+
+function div(){
+    n1=Number(document.getElementById("n1").value)
+    n2=Number(document.getElementById("n2").value)
+    sum=n1/n2
+    document.getElementById("res").value=sum
+}
+
+
+
+    </script>
+
+
+
+</body>
+</html>

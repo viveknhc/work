@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button{
+          
+            height: 100%;
+            width: 130px;
+            background-color: cornsilk;
+            color: rgb(0, 0, 0);
+            text-size-adjust: 30px;
+            
+        }
+    </style>
+</head>
+
+<body align="center">
+    <table border="0" align="center" style="height: 500px;width: 400px;">
+       <tr>
+           <td colspan="4">calculator <br> <input type="text" disabled id="result" style="height: 50px;width: 250px;"></td>
+       </tr>
+       <tr>
+           <td><button onclick="dis('+')">+</button></td>
+           <td><button onclick="dis('-')">-</button></td>
+           <td><button onclick="dis('*')">*</button></td>
+           <td><button onclick="dis('/')">/</button></td>
+       </tr>
+       <tr>
+           <td><button onclick="dis('7')">7</button></td>
+           <td><button onclick="dis('8')">8</button></td>
+           <td><button onclick="dis('9')">9</button></td>
+           <td rowspan="3"><button onclick="solve()">=</button></td>
+       </tr>
+       <tr>
+        <td><button onclick="dis('4')">4</button></td>
+        <td><button onclick="dis('5')">5</button></td>
+        <td><button onclick="dis('6')">6</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="dis('1')">1</button></td>
+        <td><button onclick="dis('2')">2</button></td>
+        <td><button onclick="dis('3')">3</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="dis('0')">0</button></td>
+        <td><button onclick="dis('.')">.</button></td>
+        <td><button onclick="clr()">AC</button></td>
+        <td><button onclick="c()">C</button></td>
+    </tr>
+     </table>
+
+
+     <script>
+         a=document.getElementById("result")
+function dis(val)
+         {
+             document.getElementById("result").value+=val
+         }
+           
+         //function that evaluates the digit and return result
+         function solve()
+         {
+              x = document.getElementById("result").value
+              y = eval(x)
+             document.getElementById("result").value = y
+         }
+
+         function clr()
+         {
+             document.getElementById("result").value = ""
+         }
+
+         function c(){
+             a.value=a.value.slice(0,-1)
+         }
+     </script>
+</body>
+</html>

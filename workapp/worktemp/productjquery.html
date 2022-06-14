@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1 id="txt1">product</h1>
+    <div id="div1" style="display: none;height: 500px;width: 300px;background-color: cadetblue;">
+        <div>
+            <img src="../worktemp/pic_bulbon.jpeg" alt="">
+        </div>
+        <h1>BULB</h1>
+        <label for="">price:</label>
+        <input type="text">
+        <h1>Discription </h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<i class="fa fa-car fa-lg"></i><span style="display: none;"> Eos assumenda eum quibusdam sunt non quae ducimus corporis dolore, placeat consequuntur rerum, mollitia doloremque voluptas voluptates officia in, recusandae maiores aspernatur.</span></p>
+        <button>buy Now</button> &nbsp; &nbsp; <button>Add to cart</button>
+    </div>
+
+    <script>
+       $('#txt1').click(function(){
+           $('#div1').fadeIn(4000)
+
+       })
+       $('i').click(function(){
+           $('span').toggle()
+           $('1').hide()
+       })
+    </script>
+</body>
+</html>
